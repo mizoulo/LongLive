@@ -30,7 +30,8 @@ inference:
   streaming_vae: false
   async_vae: false
   vae_type: wan # wan, mg_lightvae, mg_lightvae_v2
-  vae_device: "cuda:2"
+  # NOTE: changed to cuda:0 since my machine only has one GPU
+  vae_device: "cuda:0"
 
 checkpoints:
   generator_ckpt: /path/to/longlive2/generator_checkpoint.pt
@@ -45,4 +46,4 @@ adapter:
   verbose: true
 
 logging:
-  seed: 0
+  seed: 42
