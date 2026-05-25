@@ -17,7 +17,8 @@
 > **Reading list for myself:**
 > - [ ] Read the DMD distillation section of the paper (§4.2)
 > - [ ] Understand how NVFP4 quantization is applied to the DiT blocks
-> - [ ] Trace the sequence parallelism implementation in `longlive/parallel/`
+> - [x] Trace the sequence parallelism implementation in `longlive/parallel/` — done 2026-06-01, see my notes in `notes/sequence_parallelism.md`
+> - [ ] Compare NVFP4 vs BF16 output quality on a short test clip
 
 <div align="center">
 
@@ -39,10 +40,4 @@
 - 🎉 [2026.1.27] LongLive is accepted by **ICLR-2026**.
 - 🔥 [2026.1.11] LongLive supports adapting LongLive's original RoPE into KV-cache relative RoPE and generates infinite long videos!
 - 🔥 [2025.11.3] We implement LongLive on linear attention model [SANA-Video](https://nvlabs.github.io/Sana/Video/)! Now SANA-Video can generate 60s interactive videos in real-time.
-- 🔥 [2025.9.29] We release [Paper](https://arxiv.org/abs/2509.22622), this GitHub repo [LongLive](https://github.com/NVlabs/LongLive) with all training and inference code, the model weight [LongLive-1.3B](https://huggingface.co/Efficient-Large-Model/LongLive-1.3B), and demo page [Website](https://nvlabs.github.io/LongLive).
-
-## Introduction
-
-**LongLive 1.0**: Real-time Interactive Long Video Generation. [You can find it here](https://github.com/NVlabs/LongLive/tree/v1.0) in our V1.0 branch.
-
-**LongLive 2.0**: an NVFP4 Parallel
+- 🔥 [2025.9.29] We release [Paper](https://arxiv.org/abs/2509.22622), this GitHub repo [LongLive](https://github.com/NVlabs/LongLive) with all training and inference code, the model weight [LongLive-1.3B](https://huggingface.co/Efficient-Large-Model/LongLive-1.3B), and demo page [Website
