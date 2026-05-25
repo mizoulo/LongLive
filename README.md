@@ -13,6 +13,11 @@
 [![Docs](https://img.shields.io/badge/Full-Documentation-green)](https://nvlabs.github.io/LongLive/LongLive2/docs/)
 
 > **Personal fork note:** I'm using this repo to learn about NVFP4 quantization and sequence parallelism for video diffusion models. My main interest is in the DMD distillation pipeline.
+>
+> **Reading list for myself:**
+> - [ ] Read the DMD distillation section of the paper (§4.2)
+> - [ ] Understand how NVFP4 quantization is applied to the DiT blocks
+> - [ ] Trace the sequence parallelism implementation in `longlive/parallel/`
 
 <div align="center">
 
@@ -40,7 +45,4 @@
 
 **LongLive 1.0**: Real-time Interactive Long Video Generation. [You can find it here](https://github.com/NVlabs/LongLive/tree/v1.0) in our V1.0 branch.
 
-**LongLive 2.0**: an NVFP4 Parallel Infrastructure for Long Video Generation
-- For training, it supports
-  - [x] Balanced sequence parallel for AR training (teacher-forcing).
-  - [x] AR training on multi-shot (or single-sho
+**LongLive 2.0**: an NVFP4 Parallel
